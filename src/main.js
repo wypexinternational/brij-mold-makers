@@ -94,7 +94,7 @@ form?.addEventListener('submit', (event) => {
     optional('Material', 'material'),
     optional('Quantity per year', 'qty'),
     '',
-    `About the part: ${data.get('details')}`,
+    `About the project: ${data.get('details')}`,
   ].filter((line) => line !== null).join('\n');
 
   if (channel === 'email') {
