@@ -3,298 +3,340 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brij Mold Makers | Plastic Part Design, Injection Molds and Production</title>
-  <meta name="description" content="Plastic part design and validation, injection mold manufacturing and injection molded part production. Free DFM check with every quote.">
-  <meta property="og:title" content="Brij Mold Makers | Plastic Part Design, Injection Molds and Production">
-  <meta property="og:description" content="Plastic part design and validation, injection mold manufacturing and injection molded part production. Free DFM check with every quote.">
+  <title>Brij Mold Makers | Injection Mold Design and Manufacturing</title>
+  <meta name="description" content="Injection mold design with mold flow analysis, mold manufacturing, and plastic part production. Quotes within 24 hours.">
+  <meta property="og:title" content="Brij Mold Makers">
+  <meta property="og:description" content="Injection mold design, mold manufacturing and plastic part production.">
   <meta property="og:image" content="media/moldflow-poster.webp">
-  <meta name="theme-color" content="#0F6E56">
+  <meta name="theme-color" content="#161c21">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/style.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Brij Mold Makers",
-    "description": "Plastic part design and validation, injection mold manufacturing and injection molded part production.",
-    "email": "brijmoldmakers@gmail.com",
-    "telephone": "+91-95305-77218",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "F-27 Focal Point",
-      "addressLocality": "Jalandhar",
-      "postalCode": "144004",
-      "addressRegion": "Punjab",
-      "addressCountry": "IN"
-    }
-  }
+  {"@context":"https://schema.org","@type":"Organization","name":"Brij Mold Makers","description":"Injection mold design, mold manufacturing and plastic part production.","email":"brijmoldmakers@gmail.com","telephone":"+91-95305-77218","address":{"@type":"PostalAddress","streetAddress":"F-27 Focal Point","addressLocality":"Jalandhar","postalCode":"144004","addressRegion":"Punjab","addressCountry":"IN"}}
   </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header">
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-name">Brij Mold Makers</span>
+      <span class="loader-bar"><span id="loaderFill"></span></span>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
     <div class="wrap header-row">
-      <a class="brand" href="index.html" aria-label="Brij Mold Makers home">
+      <a class="brand" href="#top" aria-label="Brij Mold Makers, back to top">
         <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
           <rect x="1.5" y="1.5" width="29" height="29" rx="3" fill="none" stroke="currentColor" stroke-width="3"/>
-          <path d="M1.5 16h29" stroke="currentColor" stroke-width="2" stroke-dasharray="4 2.5"/>
-          <rect x="9" y="9" width="14" height="7" fill="currentColor"/>
-          <rect x="12" y="16" width="8" height="7" fill="currentColor" opacity=".45"/>
+          <path d="M16 1.5v29" stroke="currentColor" stroke-width="2" stroke-dasharray="4 2.5"/>
+          <rect x="8" y="10" width="8" height="12" fill="currentColor"/>
+          <rect x="16" y="12" width="6" height="8" fill="currentColor" opacity=".45"/>
         </svg>
         <span>Brij Mold Makers</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
       <nav class="main-nav" id="main-nav" aria-label="Main">
         <ul class="nav-list">
-          <li><a href="index.html" aria-current="page">Design</a></li>
-          <li><a href="mold-manufacturing.html">Molds</a></li>
-          <li><a href="production.html">Production</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a class="btn btn-small" href="index.html#quote">Request a Quote</a></li>
+          <li><a href="#design">Mold Design</a></li>
+          <li><a href="#manufacturing">Manufacturing</a></li>
+          <li><a href="#production">Production</a></li>
+          <li><a href="#parts">Part Design</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="btn btn-small" href="#quote">Request a Quote</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero hero-industrial" aria-labelledby="hero-title">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">Plastic parts and injection molds</p>
-          <h1 id="hero-title">Plastic Part Design, Mold Manufacturing and Production</h1>
-          <p class="lede">Brij Mold Makers designs plastic parts, validates molds, builds tooling and runs injection molded part production.</p>
-          <div class="cta-row">
-            <a class="btn" href="#quote">Request a Quote</a>
-            <a class="btn btn-ghost" href="https://wa.me/919530577218" target="_blank" rel="noopener">WhatsApp Us</a>
+    <!-- HERO: a mold running its cycle -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-stage" id="moldStage" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title" class="split-lines">Injection Mold Design and Manufacturing</h1>
+          <p class="lede" data-rise>Mold design, mold fabrication and plastic part production.</p>
+          <div class="cta-row" data-rise>
+            <a class="btn btn-light" href="#quote">Request a Quote</a>
+            <a class="btn btn-ghost-light" href="https://wa.me/919530577218" target="_blank" rel="noopener">WhatsApp Us</a>
           </div>
         </div>
-        <figure class="hero-figure">
-          <div class="media-frame">
-            <video class="flow-video" width="792" height="428" autoplay muted loop playsinline poster="media/moldflow-poster.webp" aria-describedby="flow-cap">
-              <source src="media/moldflow.webm" type="video/webm">
-              <source src="media/moldflow.mp4" type="video/mp4">
-            </video>
-            <button class="video-toggle" type="button" aria-pressed="false">Pause</button>
-          </div>
-          <figcaption id="flow-cap">Mold flow analysis of a 4-cavity mold.</figcaption>
-        </figure>
-      </div>
-      <div class="wrap">
-        <dl class="proof">
-          <div><dt>Quotes</dt><dd>Within 24 hours</dd></div>
-          <div><dt>With every quote</dt><dd>Free DFM check</dd></div>
-          <div><dt>Mold design</dt><dd>From $200</dd></div>
-          <div><dt>Confidentiality</dt><dd>NDA on request</dd></div>
+        <dl class="cycle" aria-hidden="true" data-rise>
+          <div><dt>Shot</dt><dd id="cyShot">0001</dd></div>
+          <div><dt>Stage</dt><dd id="cyPhase">Clamp</dd></div>
+          <div><dt>Time</dt><dd id="cyTime">00.00 s</dd></div>
         </dl>
       </div>
+      <a class="scroll-cue" href="#clients" aria-label="Scroll to content"><span></span></a>
     </section>
 
-    <div class="cred-strip">
-      <p class="wrap">Experience across automotive, household, FMCG and electronic-controller projects, including work associated with Motherson (Mother Son Molds), Suzuki India, Wypex and Motionics.</p>
-    </div>
-
-    <section class="section" id="services" aria-labelledby="services-title">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 id="services-title">What We Do</h2>
-          <p>We work on plastic parts and the injection molds that make them.</p>
-        </div>
-        <div class="stage-grid">
-          <article class="stage">
-            <span class="stage-no">01</span>
-            <h3>Design Validation</h3>
-            <p>We design the plastic part, or check your design, before any steel is cut.</p>
-            <ul class="spec-list">
-              <li>DFM review</li>
-              <li>Wall thickness</li>
-              <li>Draft angles</li>
-              <li>Sink marks</li>
-              <li>Air vents</li>
-              <li>Mold flow</li>
-              <li>Fitment with mating parts</li>
-              <li>Strength</li>
-            </ul>
-          </article>
-          <article class="stage">
-            <span class="stage-no">02</span>
-            <h3>Mold Manufacturing</h3>
-            <p>Injection molds machined through our toolroom and partner network.</p>
-            <ul class="spec-list">
-              <li>CNC and VMC machining</li>
-              <li>EDM and wire cut</li>
-              <li>P20 steel for most molds</li>
-              <li>Mold trials before dispatch</li>
-              <li>Photos and videos at each stage</li>
-            </ul>
-            <a class="go" href="mold-manufacturing.html">Mold design and manufacturing</a>
-          </article>
-          <article class="stage">
-            <span class="stage-no">03</span>
-            <h3>Part Production</h3>
-            <p>Injection molded parts from molds we build, or from molds you supply.</p>
-            <ul class="spec-list">
-              <li>Brij-made molds</li>
-              <li>Customer-supplied molds</li>
-              <li>Material and quantity as per your requirement</li>
-            </ul>
-            <a class="go" href="production.html">Part production</a>
-          </article>
-        </div>
+    <!-- CLIENTS: sliding strip -->
+    <section class="clients" id="clients" aria-label="Companies we have worked with">
+      <p class="clients-label">Companies we have worked with</p>
+      <div class="marquee">
+        <ul class="marquee-track">
+          <li>Motherson</li><li>Suzuki India</li><li>Motionics</li><li>Wypex</li>
+          <li>Motherson</li><li>Suzuki India</li><li>Motionics</li><li>Wypex</li>
+        </ul>
+        <ul class="marquee-track" aria-hidden="true">
+          <li>Motherson</li><li>Suzuki India</li><li>Motionics</li><li>Wypex</li>
+          <li>Motherson</li><li>Suzuki India</li><li>Motionics</li><li>Wypex</li>
+        </ul>
       </div>
     </section>
 
-    <section class="section section-soft" id="process" aria-labelledby="process-title">
+    <!-- 01 MOLD DESIGN -->
+    <section class="section" id="design" aria-labelledby="design-title">
       <div class="wrap">
-        <div class="section-head">
-          <h2 id="process-title">How We Work</h2>
+        <p class="index"><span>01</span> Mold Design</p>
+        <h2 id="design-title" class="visually-hidden">Mold Design</h2>
+        <p class="statement" data-words>We design injection, blow and rubber molds. Every design is checked with mold flow analysis before any steel is cut.</p>
+
+        <div class="design-grid">
+          <figure class="flow-figure" data-rise>
+            <div class="media-frame">
+              <video class="flow-video" width="792" height="428" muted loop playsinline preload="metadata" poster="media/moldflow-poster.webp" aria-describedby="flow-cap">
+                <source src="media/moldflow.webm" type="video/webm">
+                <source src="media/moldflow.mp4" type="video/mp4">
+              </video>
+              <button class="video-toggle" type="button" aria-pressed="false">Pause</button>
+            </div>
+            <figcaption id="flow-cap">Mold flow analysis, 4-cavity mold, Autodesk Moldflow.</figcaption>
+          </figure>
+
+          <div>
+            <h3 class="list-title">Checked on every design</h3>
+            <ul class="spec-list">
+              <li><span>DFM</span><span>Draft, wall thickness, undercuts, parting line</span></li>
+              <li><span>Mold flow</span><span>Filling, pressure, weld lines, air traps</span></li>
+              <li><span>Gate location</span><span>Even filling, no marks on visible faces</span></li>
+              <li><span>Sink marks</span><span>Thick sections found and corrected</span></li>
+              <li><span>Air venting</span><span>No burn marks or short shots</span></li>
+              <li><span>Cooling</span><span>Flat parts, shorter cycle time</span></li>
+            </ul>
+            <p class="note">You receive the 3D mold assembly, 2D drawings and BOM, in native CAD and STEP. Mold design starts at $200.</p>
+          </div>
         </div>
-        <ol class="steps" style="--cols: 4">
-          <li><h3>Send your part</h3><p>A 3D file, a drawing, a sample or photos. NDA first if you need one.</p></li>
-          <li><h3>Quote and DFM check</h3><p>A quote within 24 hours, with a free DFM check and suggested changes.</p></li>
-          <li><h3>Mold design and build</h3><p>You approve the part and mold design, then we build and trial the mold.</p></li>
-          <li><h3>Production</h3><p>Sample parts for approval, then production.</p></li>
+
+        <figure class="section-figure" data-rise>
+          <svg class="mold-section" viewBox="0 0 900 380" role="img" aria-labelledby="ms-title">
+            <title id="ms-title">Cross section of a two-cavity injection mold filling with plastic</title>
+            <defs>
+              <pattern id="hatch" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
+                <line x1="0" y1="0" x2="0" y2="8" class="hatch-line"/>
+              </pattern>
+              <linearGradient id="meltL" x1="1" x2="0"><stop offset="0" stop-color="#2346d8"/><stop offset=".35" stop-color="#19bcd8"/><stop offset=".6" stop-color="#33c759"/><stop offset=".82" stop-color="#f2c500"/><stop offset="1" stop-color="#e3321f"/></linearGradient>
+              <linearGradient id="meltR" x1="0" x2="1" href="#meltL"/>
+              <clipPath id="fillClip"><rect id="fillRect" x="450" y="0" width="0" height="380"/></clipPath>
+              <clipPath id="sprueClip"><rect id="sprueRect" x="0" y="0" width="900" height="0"/></clipPath>
+            </defs>
+            <rect class="plate" x="120" y="30" width="660" height="140" fill="url(#hatch)"/>
+            <rect class="plate" x="120" y="170" width="660" height="120" fill="url(#hatch)"/>
+            <rect class="plate" x="120" y="290" width="80" height="60" fill="url(#hatch)"/>
+            <rect class="plate" x="700" y="290" width="80" height="60" fill="url(#hatch)"/>
+            <rect class="ejector" x="215" y="308" width="470" height="24"/>
+            <rect class="cavity" x="190" y="85" width="220" height="85"/>
+            <rect class="cavity" x="490" y="85" width="220" height="85"/>
+            <g clip-path="url(#sprueClip)"><path d="M441 14 L459 14 L455 164 L445 164 Z" fill="#2346d8"/></g>
+            <g clip-path="url(#fillClip)">
+              <rect x="410" y="162" width="80" height="11" fill="#2346d8"/>
+              <rect x="190" y="85" width="220" height="85" fill="url(#meltL)"/>
+              <rect x="490" y="85" width="220" height="85" fill="url(#meltR)"/>
+            </g>
+            <rect class="core" x="210" y="105" width="180" height="65"/>
+            <rect class="core" x="210" y="105" width="180" height="65" fill="url(#hatch)"/>
+            <rect class="core" x="510" y="105" width="180" height="65"/>
+            <rect class="core" x="510" y="105" width="180" height="65" fill="url(#hatch)"/>
+            <rect class="outline" x="190" y="85" width="220" height="85"/>
+            <rect class="outline" x="490" y="85" width="220" height="85"/>
+            <g class="cool"><circle cx="240" cy="55" r="10"/><circle cx="360" cy="55" r="10"/><circle cx="540" cy="55" r="10"/><circle cx="660" cy="55" r="10"/><circle cx="260" cy="230" r="10"/><circle cx="340" cy="230" r="10"/><circle cx="560" cy="230" r="10"/><circle cx="640" cy="230" r="10"/></g>
+            <g class="pins"><rect x="195" y="170" width="9" height="138"/><rect x="396" y="170" width="9" height="138"/><rect x="495" y="170" width="9" height="138"/><rect x="696" y="170" width="9" height="138"/></g>
+            <rect class="plate" x="426" y="0" width="48" height="32" fill="url(#hatch)"/>
+            <line class="pl" x1="80" y1="170" x2="820" y2="170"/>
+            <text class="pl-label" x="826" y="174">PL</text>
+            <g class="dim"><line x1="120" y1="366" x2="780" y2="366"/><line x1="120" y1="358" x2="120" y2="374"/><line x1="780" y1="358" x2="780" y2="374"/></g>
+          </svg>
+          <figcaption>Cross section of a two-cavity mold.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 02 MOLD MANUFACTURING: horizontal steps -->
+    <section class="section section-dark" id="manufacturing" aria-labelledby="mfg-title">
+      <div class="wrap">
+        <p class="index"><span>02</span> Mold Manufacturing</p>
+        <h2 id="mfg-title" class="visually-hidden">Mold Manufacturing</h2>
+        <p class="statement" data-words>Molds are made to the approved design and tested on our own injection molding machine before dispatch.</p>
+      </div>
+      <div class="hscroll" id="hscroll">
+        <ol class="hscroll-track" id="hscrollTrack">
+          <li class="step">
+            <span class="step-no">01</span>
+            <svg viewBox="0 0 120 80" aria-hidden="true"><rect x="10" y="10" width="100" height="60" class="ln"/><path d="M10 40h100M60 10v60" class="ln thin"/><path d="M25 25h20v30H25z" class="ln"/></svg>
+            <h3>Design approval</h3><p>You approve the mold design and the flow analysis.</p>
+          </li>
+          <li class="step">
+            <span class="step-no">02</span>
+            <svg viewBox="0 0 120 80" aria-hidden="true"><path d="M50 8h20v30l-10 10-10-10z" class="ln"/><path d="M15 62h90M15 72h90" class="ln"/><path d="M35 62v-8h50v8" class="ln thin"/></svg>
+            <h3>CNC and VMC machining</h3><p>Core, cavity and plates machined to the drawing.</p>
+          </li>
+          <li class="step">
+            <span class="step-no">03</span>
+            <svg viewBox="0 0 120 80" aria-hidden="true"><path d="M60 6v40" class="ln"/><path d="M52 46h16v8H52z" class="ln"/><path d="M20 62h80v12H20z" class="ln"/><path d="M57 58l3 4 3-4" class="ln thin"/></svg>
+            <h3>EDM and wire cut</h3><p>Fine details, sharp corners and deep ribs.</p>
+          </li>
+          <li class="step">
+            <span class="step-no">04</span>
+            <svg viewBox="0 0 120 80" aria-hidden="true"><rect x="15" y="12" width="40" height="56" class="ln"/><rect x="65" y="12" width="40" height="56" class="ln"/><path d="M55 24h10M55 56h10" class="ln thin"/></svg>
+            <h3>Assembly and polishing</h3><p>Fitting, polishing, and checks on cooling and ejection.</p>
+          </li>
+          <li class="step">
+            <span class="step-no">05</span>
+            <svg viewBox="0 0 120 80" aria-hidden="true"><rect x="12" y="22" width="30" height="36" class="ln"/><rect x="50" y="22" width="30" height="36" class="ln"/><path d="M90 40h20M100 30l10 10-10 10" class="ln thin"/></svg>
+            <h3>Trial</h3><p>First shots on our machine. Samples sent to you with photos and video.</p>
+          </li>
+          <li class="step">
+            <span class="step-no">06</span>
+            <svg viewBox="0 0 120 80" aria-hidden="true"><path d="M20 30l40-18 40 18v34l-40 12-40-12z" class="ln"/><path d="M20 30l40 14 40-14M60 44v32" class="ln thin"/></svg>
+            <h3>Dispatch</h3><p>Packed and shipped, or kept with us for production.</p>
+          </li>
         </ol>
       </div>
-    </section>
-
-    <section class="section" id="reviews" aria-labelledby="reviews-title">
       <div class="wrap">
-        <div class="section-head"><h2 id="reviews-title">Client Reviews</h2></div>
-        <div class="reviews">
-          <blockquote>
-            <p>Really an expert in Solidworks and plastic molds. Highly recommended.</p>
-            <footer>Kamal K., 3D design in ArtCAM</footer>
-          </blockquote>
-          <blockquote>
-            <p>One of the best engineers I've had the pleasure of working with. Always ready to help and very efficient with his time. Will be hiring him for more jobs.</p>
-            <footer>Client, 3D printed parts for machining</footer>
-          </blockquote>
-          <blockquote>
-            <p>He is great and very much dedicated towards his job and has a vast knowledge about designing and modifying all kinds of STEP files.</p>
-            <footer>Haneet K., STEP file from image</footer>
-          </blockquote>
-          <blockquote>
-            <p>Has great understanding of his work including various post processors like FANUC, SIEMENS, HAAS. Completes the work on time.</p>
-            <footer>Haneet K., CNC programming</footer>
-          </blockquote>
-        </div>
+        <ul class="facts">
+          <li>P20 steel for most molds. Harder steels for high volumes.</li>
+          <li>Machining with partner toolrooms, under our supervision.</li>
+          <li>The mold is yours after payment.</li>
+        </ul>
       </div>
     </section>
 
-    <section class="section section-soft" id="about" aria-labelledby="about-title">
-      <div class="wrap about-grid">
-        <figure class="portrait">
-          <div class="portrait-frame" role="img" aria-label="Photo of Yuvraj Sehgal, coming soon"><span aria-hidden="true">YS</span></div>
-          <figcaption>Yuvraj Sehgal, Head of Design</figcaption>
-        </figure>
+    <!-- 03 PRODUCTION -->
+    <section class="section" id="production" aria-labelledby="prod-title">
+      <div class="wrap">
+        <p class="index"><span>03</span> Production</p>
+        <h2 id="prod-title" class="visually-hidden">Production</h2>
+        <p class="statement" data-words>Plastic parts from our molds or from your existing molds.</p>
+        <div class="two-col">
+          <div class="col" data-rise>
+            <h3>From our mold</h3>
+            <p>Production starts on the same mold once you approve the samples. Mold and parts are quoted together.</p>
+          </div>
+          <div class="col" data-rise>
+            <h3>From your mold</h3>
+            <p>Send us your mold. We check it, run trials, and start production after you approve the samples.</p>
+          </div>
+        </div>
+        <ul class="tags" data-rise>
+          <li>Sample approval</li><li>Quality checks</li><li>Export packing</li><li>Shipping documents</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 04 PART DESIGN AND 3D PRINTING -->
+    <section class="section section-soft" id="parts" aria-labelledby="parts-title">
+      <div class="wrap parts-grid">
         <div>
-          <h2 id="about-title">About Us</h2>
-          <p>Brij Mold Makers is a GST-registered company working on plastic part design, injection molds and molded part production.</p>
-          <p>Our design work is led by Yuvraj Sehgal, a mechanical engineer with a tool and die background. He has worked on plastic parts and molds for automotive, household appliance, FMCG and electronic-controller products.</p>
-          <p>We design in SolidWorks, Siemens NX and AutoCAD, and run mold flow analysis in Autodesk Moldflow.</p>
+          <p class="index"><span>04</span> Part Design and 3D Printing</p>
+          <h2 id="parts-title" class="visually-hidden">Part Design and 3D Printing</h2>
+          <p class="statement statement-sm" data-words>We also design plastic and mechanical parts, and 3D print samples to check fit before tooling.</p>
+          <ul class="spec-list">
+            <li><span>Part design</span><span>3D models and assemblies</span></li>
+            <li><span>Reverse engineering</span><span>From a sample or photos</span></li>
+            <li><span>Drawings</span><span>2D drawings with tolerances</span></li>
+            <li><span>3D printing</span><span>FDM in-house, resin on request</span></li>
+          </ul>
+        </div>
+        <div data-rise>
+          <div class="viewer-box">
+            <div class="viewer-slot" id="viewer-slot">
+              <img src="media/gearbox-poster.webp" alt="Gearbox assembly designed by our team" class="viewer-poster" width="1200" height="900" loading="lazy">
+              <button class="btn" type="button" id="load-model">View in 3D</button>
+            </div>
+          </div>
+          <p class="caption">Gearbox assembly designed by our team.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="faq" aria-labelledby="faq-title">
-      <div class="wrap narrow">
-        <h2 id="faq-title">FAQs</h2>
-        <details><summary>What can you start from?</summary><p>A 3D file, a 2D drawing, a physical sample or photos with dimensions.</p></details>
-        <details><summary>What is in the free DFM check?</summary><p>We check your part for wall thickness, draft, undercuts, sink marks and gate location, and send suggested changes with the quote.</p></details>
-        <details><summary>Can you produce parts from our existing mold?</summary><p>Yes. We run production from molds we build and from molds supplied by the customer.</p></details>
-        <details><summary>Which file formats do you deliver?</summary><p>Native SolidWorks or NX files, STEP, IGES and PDF drawings. Other formats on request.</p></details>
-        <details><summary>Do you sign an NDA?</summary><p>Yes, before you share any files. We never show client work.</p></details>
-        <details><summary>Who owns the design and the mold?</summary><p>You do, once they are paid for.</p></details>
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <div>
+          <p class="index"><span>05</span> About Us</p>
+          <h2 id="about-title" class="visually-hidden">About Us</h2>
+          <p class="statement statement-sm" data-words>Brij Mold Makers is a mold design and manufacturing company. Our team has worked with leading manufacturers in the automotive, household, FMCG and electronics industries.</p>
+          <p class="about-note">Design work is led by Yuvraj Sehgal. We design in SolidWorks, Siemens NX and AutoCAD, and run flow analysis in Autodesk Moldflow.</p>
+        </div>
+        <div class="quotes" data-rise>
+          <blockquote><p>Really an expert in Solidworks and plastic molds. Highly recommended.</p><footer>Kamal K.</footer></blockquote>
+          <blockquote><p>One of the best engineers I've had the pleasure of working with.</p><footer>Client, machined parts project</footer></blockquote>
+        </div>
       </div>
     </section>
 
-    <section class="section section-soft" id="quote" aria-labelledby="quote-title">
+    <!-- QUOTE -->
+    <section class="section section-dark" id="quote" aria-labelledby="quote-title">
       <div class="wrap quote-grid">
         <div>
-          <h2 id="quote-title">Request a Quote</h2>
-          <p class="lede">Send your part details. We reply within 24 hours with a quote and a free DFM check.</p>
-          <p>The form opens WhatsApp or your email with the details filled in. Attach your files there.</p>
-          <div class="direct">
-            <p><span class="muted">WhatsApp</span><br><a href="https://wa.me/919530577218" target="_blank" rel="noopener">+91 95305 77218</a></p>
-            <p><span class="muted">Email</span><br><a href="mailto:brijmoldmakers@gmail.com">brijmoldmakers@gmail.com</a></p>
-          </div>
+          <p class="index"><span>06</span> Request a Quote</p>
+          <h2 id="quote-title" class="quote-title">Send your part file or drawing.</h2>
+          <p class="quote-lede">We reply within 24 hours with a quote and a free DFM check. NDA on request.</p>
+          <dl class="direct">
+            <div><dt>WhatsApp</dt><dd><a href="https://wa.me/919530577218" target="_blank" rel="noopener">+91 95305 77218</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:brijmoldmakers@gmail.com">brijmoldmakers@gmail.com</a></dd></div>
+          </dl>
+          <details class="faq"><summary>Which files can I send?</summary><p>STEP, IGES, Parasolid, SolidWorks, STL, DWG, DXF or PDF. A sample or photos also work.</p></details>
+          <details class="faq"><summary>Who owns the design and the mold?</summary><p>You do, once paid for.</p></details>
+          <details class="faq"><summary>Can I order only the mold design?</summary><p>Yes. You get native CAD and STEP files and can have the mold made anywhere.</p></details>
         </div>
+
         <form class="quote-form" id="quote-form" novalidate>
           <div class="field-row">
-            <label>Your name
-              <input name="name" autocomplete="name" required>
-            </label>
-            <label>Email
-              <input name="email" type="email" autocomplete="email" required>
-            </label>
+            <label>Your name<input name="name" autocomplete="name" required></label>
+            <label>Email<input name="email" type="email" autocomplete="email" required></label>
           </div>
           <div class="field-row">
-            <label>Company <span class="opt">(optional)</span>
-              <input name="company" autocomplete="organization">
-            </label>
-            <label>Country
-              <input name="country" autocomplete="country-name" required>
-            </label>
+            <label>Company <span class="opt">(optional)</span><input name="company" autocomplete="organization"></label>
+            <label>Country<input name="country" autocomplete="country-name" required></label>
           </div>
           <fieldset>
             <legend>What do you need?</legend>
             <div class="checks">
-              <label><input type="checkbox" name="need" value="Plastic part design"> Plastic part design</label>
-              <label><input type="checkbox" name="need" value="DFM / design validation"> DFM / design validation</label>
-              <label><input type="checkbox" name="need" value="Mold flow analysis"> Mold flow analysis</label>
               <label><input type="checkbox" name="need" value="Mold design"> Mold design</label>
+              <label><input type="checkbox" name="need" value="Mold flow analysis"> Mold flow analysis</label>
               <label><input type="checkbox" name="need" value="Mold manufacturing"> Mold manufacturing</label>
               <label><input type="checkbox" name="need" value="Part production"> Part production</label>
+              <label><input type="checkbox" name="need" value="Part design"> Part design</label>
+              <label><input type="checkbox" name="need" value="3D printing"> 3D printing</label>
             </div>
           </fieldset>
           <div class="field-row">
-            <label>Material <span class="opt">(if known)</span>
-              <input name="material" placeholder="e.g. ABS, PP, nylon">
-            </label>
-            <label>Quantity per year <span class="opt">(if known)</span>
-              <input name="qty" inputmode="numeric">
-            </label>
+            <label>Material <span class="opt">(if known)</span><input name="material" placeholder="e.g. PP, ABS, PA66"></label>
+            <label>Quantity per year <span class="opt">(if known)</span><input name="qty" inputmode="numeric"></label>
           </div>
-          <label>About the project
-            <textarea name="details" rows="4" required placeholder="The part, what it is used for, and what you have so far (3D file, drawing, sample, existing mold)"></textarea>
-          </label>
+          <label>About the part<textarea name="details" rows="4" required placeholder="What the part is, its size, and what files you have"></textarea></label>
           <p class="form-error" id="form-error" role="alert" hidden></p>
           <div class="cta-row">
-            <button class="btn" type="submit" value="whatsapp">Send on WhatsApp</button>
-            <button class="btn btn-ghost" type="submit" value="email">Send by email</button>
+            <button class="btn btn-light" type="submit" value="whatsapp">Send on WhatsApp</button>
+            <button class="btn btn-ghost-light" type="submit" value="email">Send by email</button>
           </div>
+          <p class="form-note">Opens WhatsApp or your email with the details filled in. Attach your files there.</p>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-grid">
-        <div>
-          <h2>Brij Mold Makers</h2>
-          <p>F-27 Focal Point, Jalandhar 144004<br>Punjab, India</p>
-        </div>
-        <div>
-          <h2>Services</h2>
-          <ul>
-            <li><a href="index.html#services">Plastic Part Design and Validation</a></li>
-            <li><a href="mold-manufacturing.html">Mold Design and Manufacturing</a></li>
-            <li><a href="production.html">Part Production</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2>Contact</h2>
-          <ul>
-            <li>WhatsApp <a href="https://wa.me/919530577218" target="_blank" rel="noopener">+91 95305 77218</a></li>
-            <li><a href="mailto:brijmoldmakers@gmail.com">brijmoldmakers@gmail.com</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="footer-note">&copy; <span id="year">2026</span> Brij Mold Makers. All rights reserved.</p>
+    <div class="wrap footer-row">
+      <p><strong>Brij Mold Makers</strong><br>F-27 Focal Point, Jalandhar 144004, Punjab, India</p>
+      <p><a href="https://wa.me/919530577218" target="_blank" rel="noopener">+91 95305 77218</a><br><a href="mailto:brijmoldmakers@gmail.com">brijmoldmakers@gmail.com</a></p>
+      <p class="muted">&copy; <span id="year">2026</span> Brij Mold Makers</p>
     </div>
   </footer>
 

@@ -32,6 +32,19 @@ npm run preview    # serve dist/ to check the production build
 - The quote form has no server. It builds the message and opens WhatsApp or the email app.
   Nothing is stored on the site.
 
+## Page structure (v5, 6 Oct 2026)
+
+One page, mold-first: hero (live 3D mold cycle) → client strip → 01 Mold Design → 02 Mold
+Manufacturing (pinned, steps slide sideways on desktop) → 03 Production → 04 Part Design and
+3D Printing → About → Request a Quote. `mold-manufacturing.html` and `production.html` are
+redirects to the matching sections (old links were shared on WhatsApp).
+
+- `src/mold3d.js`: the procedural mold (three.js), its cycle runs on a GSAP timeline. It only
+  renders while on screen. It is loaded as a separate chunk, so text and buttons do not wait for it.
+- `src/main.js`: GSAP ScrollTrigger + SplitText. Header colour triggers are created after the
+  manufacturing pin, otherwise their positions are wrong. `?shot` skips the intro for screenshots.
+- Reduced motion: no loader, no word reveals, still mold frame, cross-section shown filled.
+
 ## Content rules
 
 - Plain, direct English. No metaphors, no hype words.
