@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brij Mold Makers | Mold design, flow analysis and toolmaking</title>
-  <meta name="description" content="Injection, blow and rubber mold design, mold flow analysis, 3D printed samples and mold manufacturing. Jalandhar, India. Working with clients worldwide.">
-  <meta property="og:title" content="Brij Mold Makers">
-  <meta property="og:description" content="Mold design, flow analysis, 3D printed samples and toolmaking from Jalandhar, India.">
+  <title>Brij Mold Makers | Plastic part and mold design, checked before steel is cut</title>
+  <meta name="description" content="Plastic part and injection mold design from Jalandhar, India. DFM, mold flow, sink mark, air vent and fit checks on every design. 3D printed and machined prototypes. Quote within 24 hours.">
+  <meta property="og:title" content="Brij Mold Makers | Plastic part and mold design, checked before steel is cut">
+  <meta property="og:description" content="Plastic part and injection mold design from Jalandhar, India. DFM, mold flow, sink mark, air vent and fit checks on every design. 3D printed and machined prototypes. Quote within 24 hours.">
   <meta property="og:image" content="media/moldflow-poster.webp">
   <meta name="theme-color" content="#0F6E56">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="media/moldflow-poster.webp" fetchpriority="high">
   <link rel="stylesheet" href="/src/style.css">
   <script type="application/ld+json">
   {
@@ -36,274 +35,167 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-
   <header class="site-header">
     <div class="wrap header-row">
-      <a class="brand" href="#top" aria-label="Brij Mold Makers, back to top">
+      <a class="brand" href="index.html" aria-label="Brij Mold Makers home">
         <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-          <rect x="1.5" y="1.5" width="29" height="29" rx="2" fill="none" stroke="currentColor" stroke-width="3"/>
+          <rect x="1.5" y="1.5" width="29" height="29" rx="3" fill="none" stroke="currentColor" stroke-width="3"/>
           <path d="M1.5 16h29" stroke="currentColor" stroke-width="2" stroke-dasharray="4 2.5"/>
           <rect x="9" y="9" width="14" height="7" fill="currentColor"/>
           <rect x="12" y="16" width="8" height="7" fill="currentColor" opacity=".45"/>
         </svg>
         <span>Brij Mold Makers</span>
       </a>
-      <nav aria-label="Main">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main">
         <ul class="nav-list">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#process">How it works</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a class="btn btn-small" href="#quote">Get a quote</a></li>
+          <li><a href="index.html" aria-current="page">Design</a></li>
+          <li><a href="mold-manufacturing.html">Mold manufacturing</a></li>
+          <li><a href="production.html">Part production</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a class="btn btn-small" href="index.html#quote">Get a quote</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- HERO -->
-    <section class="hero sheet" id="top" aria-labelledby="hero-title">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <h1 id="hero-title">Molds designed by the people who build them.</h1>
-          <p class="lede">We design injection, blow and rubber molds in Jalandhar, India, for companies anywhere. We check the part with flow analysis, 3D print a sample you can hold, and get the mold built and tested in Jalandhar when you are ready.</p>
+        <div>
+          <h1 id="hero-title">Mold design, checked before any steel is cut.</h1>
+          <p class="lede">We design plastic parts and injection molds, and test every design for the problems that cost money later: sink marks, weld lines, trapped air, warping and parts that don't fit. You get files any toolmaker can build from.</p>
           <div class="cta-row">
-            <a class="btn" href="#quote">Get a quote</a>
+            <a class="btn" href="#quote">Get a free DFM check</a>
             <a class="btn btn-ghost" href="https://wa.me/919530577218" target="_blank" rel="noopener">Message us on WhatsApp</a>
           </div>
-          <p class="hero-note">Mold designs from $200. Quote within 24 hours, with a free DFM check.</p>
+          <p class="hero-note">Mold designs from $200. Quote within 24 hours.</p>
         </div>
-
         <figure class="hero-figure">
-          <div class="flow-frame">
+          <div class="media-frame">
             <video class="flow-video" width="792" height="428" autoplay muted loop playsinline poster="media/moldflow-poster.webp" aria-describedby="flow-cap">
               <source src="media/moldflow.webm" type="video/webm">
               <source src="media/moldflow.mp4" type="video/mp4">
             </video>
             <button class="video-toggle" type="button" aria-pressed="false">Pause</button>
           </div>
-          <figcaption id="flow-cap">
-            <span>Fill analysis of a 4-cavity tool with a cold runner.</span>
-            <span>All four cavities fill in 0.50 seconds, evenly.</span>
-          </figcaption>
-          <div class="fill-scale" aria-hidden="true"><span></span></div>
+          <figcaption id="flow-cap">Mold flow analysis of a 4-cavity mold. Blue fills first, red last. All four parts fill evenly in half a second.</figcaption>
         </figure>
       </div>
-
       <div class="wrap">
         <dl class="proof">
           <div><dt>Experience in mold design</dt><dd>6–7 years</dd></div>
           <div><dt>Upwork rating</dt><dd>Top Rated</dd></div>
-          <div><dt>Job success</dt><dd>100%</dd></div>
-          <div><dt>Hours billed on Upwork</dt><dd>1,693</dd></div>
+          <div><dt>Job success on Upwork</dt><dd>100%</dd></div>
+          <div><dt>Hours worked for Upwork clients</dt><dd>1,693</dd></div>
         </dl>
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="section" id="services" aria-labelledby="services-title">
+    <section class="section" id="checks" aria-labelledby="checks-title">
       <div class="wrap">
-        <h2 id="services-title">What we do</h2>
-        <p class="section-intro">Design, check and build. Use one stage or all three.</p>
-
-        <div class="stages">
-          <article class="stage">
-            <h3>Design</h3>
-            <ul class="svc-list">
-              <li><strong>Injection mold design.</strong> Core and cavity, gates and runners, cooling, ejection, full mold assembly and 2D drawings.</li>
-              <li><strong>Blow and rubber mold design.</strong> For bottles, containers, seals, grips and molded rubber parts.</li>
-              <li><strong>Product design and 3D CAD.</strong> Parts, assemblies and drawings with tolerances, in SolidWorks, NX and AutoCAD.</li>
-              <li><strong>Reverse engineering.</strong> From a sample, a photo or an old drawing to a clean model you can manufacture.</li>
-            </ul>
-          </article>
-          <article class="stage">
-            <h3>Check</h3>
-            <ul class="svc-list">
-              <li><strong>Mold flow analysis.</strong> Fill, pressure, weld lines, air traps, cooling and warpage, run in Autodesk Moldflow, with a written report.</li>
-              <li><strong>Design for manufacturing review.</strong> Draft, wall thickness, undercuts and parting line checked before tooling. Free with every quote.</li>
-              <li><strong>3D printed samples.</strong> FDM prints for size and fit checks. Resin prints when you need fine detail. Test the part before you pay for steel.</li>
-            </ul>
-          </article>
-          <article class="stage">
-            <h3>Build</h3>
-            <ul class="svc-list">
-              <li><strong>Mold manufacturing.</strong> CNC, EDM and wire-cut machining in Focal Point, Jalandhar, then trials on our injection molding machine. First samples go to you.</li>
-              <li><strong>CNC programming.</strong> Toolpaths and post-processors for FANUC, Siemens and Haas controls.</li>
-              <li><strong>Production and shipping.</strong> Molded parts or the finished mold, packed for export and shipped to you.</li>
-            </ul>
-          </article>
+        <div class="section-head">
+          <h2 id="checks-title">Every design is checked for these problems</h2>
+          <p>Most mold problems can be seen on screen. Fixing one there takes hours. Fixing it in steel takes weeks and a second trial.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="section section-tint" id="process" aria-labelledby="process-title">
-      <div class="wrap">
-        <h2 id="process-title">Start small. Stop at any stage.</h2>
-        <p class="section-intro">You pay stage by stage. Each stage ends with files or parts in your hands, so you can judge our work before you commit to the next one.</p>
-
-        <ol class="steps">
-          <li>
-            <h3>Send us the part</h3>
-            <p>A STEP, IGES or STL file, a drawing, photos or a physical sample. If you need an NDA, we sign it before you send anything.</p>
-          </li>
-          <li>
-            <h3>Design and review</h3>
-            <p>We model the part or the mold and point out anything that will cause trouble in production. You get native files and STEP.</p>
-          </li>
-          <li>
-            <h3>Simulate and print</h3>
-            <p>We run the flow analysis and 3D print a sample. You check fit and feel before any steel is cut.</p>
-          </li>
-          <li>
-            <h3>Build the mold</h3>
-            <p>The mold is machined and assembled, then tried on our injection molding machine. You get first samples, with photos and video of the tool.</p>
-          </li>
-          <li>
-            <h3>Produce and ship</h3>
-            <p>We mold your parts or ship the mold itself, packed for export, to your address.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- MOLD ANATOMY -->
-    <section class="section" id="anatomy" aria-labelledby="anatomy-title">
-      <div class="wrap anatomy-grid">
-        <div>
-          <h2 id="anatomy-title">What a mold design covers</h2>
-          <p class="section-intro">A cross section of a simple two-cavity injection mold. Every item below is designed, checked and drawn before machining starts.</p>
-          <ol class="callout-list">
-            <li><b>1</b> Fixed half, which holds the cavity side</li>
-            <li><b>2</b> Moving half, which holds the core side</li>
-            <li><b>3</b> Sprue, where the plastic enters</li>
-            <li><b>4</b> Runner, which carries plastic to each cavity</li>
-            <li><b>5</b> Gate, sized and placed for an even fill</li>
-            <li><b>6</b> The part</li>
-            <li><b>7</b> Core</li>
-            <li><b>8</b> Cooling channels, which set the cycle time</li>
-            <li><b>9</b> Ejector pins, which push the part out</li>
-            <li><b>10</b> Parting line, where the mold opens</li>
-          </ol>
-        </div>
-
-        <figure class="anatomy-figure">
-          <svg viewBox="0 0 640 420" role="img" aria-labelledby="mold-svg-title">
-            <title id="mold-svg-title">Cross section of a two-cavity injection mold with numbered parts</title>
-            <defs>
-              <pattern id="hatch" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)">
-                <line x1="0" y1="0" x2="0" y2="7" class="hatch-line"/>
-              </pattern>
-              <linearGradient id="melt" x1="0" x2="1" y1="0" y2="0">
-                <stop offset="0" stop-color="#2346d8"/>
-                <stop offset=".3" stop-color="#19bcd8"/>
-                <stop offset=".55" stop-color="#33c759"/>
-                <stop offset=".78" stop-color="#f2c500"/>
-                <stop offset="1" stop-color="#e3321f"/>
-              </linearGradient>
-              <linearGradient id="melt-r" x1="1" x2="0" y1="0" y2="0" href="#melt"/>
-            </defs>
-
-            <!-- plates -->
-            <rect class="plate" x="80" y="40" width="480" height="135" fill="url(#hatch)"/>
-            <rect class="plate" x="80" y="175" width="480" height="125" fill="url(#hatch)"/>
-            <rect class="plate" x="80" y="300" width="60" height="60" fill="url(#hatch)"/>
-            <rect class="plate" x="500" y="300" width="60" height="60" fill="url(#hatch)"/>
-            <rect class="plate ejector" x="150" y="318" width="340" height="24"/>
-
-            <!-- parts (cavities) -->
-            <rect x="130" y="95" width="160" height="80" fill="url(#melt-r)"/>
-            <rect x="350" y="95" width="160" height="80" fill="url(#melt)"/>
-            <!-- cores, part of the moving half -->
-            <rect class="core" x="146" y="111" width="128" height="64"/>
-            <rect class="core hatched" x="146" y="111" width="128" height="64" fill="url(#hatch)"/>
-            <rect class="core" x="366" y="111" width="128" height="64"/>
-            <rect class="core hatched" x="366" y="111" width="128" height="64" fill="url(#hatch)"/>
-            <rect class="outline" x="130" y="95" width="160" height="80"/>
-            <rect class="outline" x="350" y="95" width="160" height="80"/>
-
-            <!-- sprue, runner, gates -->
-            <path d="M311 22 L329 22 L325 169 L315 169 Z" fill="#2346d8"/>
-            <rect x="290" y="167" width="60" height="10" fill="#2346d8"/>
-            <rect x="282" y="169" width="10" height="5" fill="#2346d8"/>
-            <rect x="348" y="169" width="10" height="5" fill="#2346d8"/>
-            <rect class="plate" x="296" y="10" width="48" height="30" fill="url(#hatch)"/>
-
-            <!-- cooling -->
-            <g class="cool">
-              <circle cx="170" cy="66" r="9"/><circle cx="250" cy="66" r="9"/>
-              <circle cx="390" cy="66" r="9"/><circle cx="470" cy="66" r="9"/>
-              <circle cx="190" cy="240" r="9"/><circle cx="250" cy="240" r="9"/>
-              <circle cx="390" cy="240" r="9"/><circle cx="450" cy="240" r="9"/>
-            </g>
-
-            <!-- ejector pins -->
-            <g class="pins">
-              <rect x="134" y="175" width="8" height="143"/><rect x="278" y="175" width="8" height="143"/>
-              <rect x="354" y="175" width="8" height="143"/><rect x="498" y="175" width="8" height="143"/>
-            </g>
-
-            <!-- parting line -->
-            <line class="pl" x1="40" y1="175" x2="600" y2="175"/>
-            <text class="pl-label" x="604" y="179">PL</text>
-
-            <!-- callouts -->
-            <g class="balloons">
-              <line x1="560" y1="70" x2="596" y2="56"/><circle cx="608" cy="52" r="13"/><text x="608" y="57">1</text>
-              <line x1="560" y1="250" x2="596" y2="262"/><circle cx="608" cy="266" r="13"/><text x="608" y="271">2</text>
-              <line x1="329" y1="30" x2="380" y2="14"/><circle cx="393" cy="14" r="13"/><text x="393" y="19">3</text>
-              <line x1="320" y1="177" x2="320" y2="214"/><circle cx="320" cy="227" r="13"/><text x="320" y="232">4</text>
-              <circle cx="380" cy="205" r="13"/><text x="380" y="210">5</text>
-              <line x1="138" y1="100" x2="60" y2="96"/><circle cx="47" cy="96" r="13"/><text x="47" y="101">6</text>
-              <line x1="210" y1="140" x2="60" y2="140"/><circle cx="47" cy="140" r="13"/><text x="47" y="145">7</text>
-              <line x1="161" y1="66" x2="60" y2="52"/><circle cx="47" cy="50" r="13"/><text x="47" y="55">8</text>
-              <line x1="138" y1="290" x2="60" y2="300"/><circle cx="47" cy="302" r="13"/><text x="47" y="307">9</text>
-              <line x1="70" y1="175" x2="60" y2="210"/><circle cx="47" cy="222" r="13"/><text x="47" y="227">10</text>
-            </g>
-          </svg>
-          <figcaption>Section view, not to scale. The colours in the parts show fill order, blue first and red last, as in a flow analysis.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- WORK -->
-    <section class="section section-tint" id="work" aria-labelledby="work-title">
-      <div class="wrap work-grid">
-        <div>
-          <h2 id="work-title">Turn it around</h2>
-          <p class="section-intro">A gearbox assembly modelled by our team in SolidWorks. Drag to rotate it, and pinch or scroll to zoom.</p>
-          <p>We have designed parts and molds for automotive parts, household appliances, FMCG products and electronic controllers.</p>
-          <p class="muted small">Client projects are under NDA, so we never show them. Everything on this site is our own work.</p>
-        </div>
-        <div class="viewer-box">
-          <div class="viewer-slot" id="viewer-slot">
-            <img src="media/gearbox-poster.webp" alt="Still image of the gearbox assembly" class="viewer-poster" width="1200" height="900" loading="lazy">
-            <button class="btn" type="button" id="load-model">Load the 3D model <span class="muted-on-btn">(1.2 MB)</span></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROMISES -->
-    <section class="section" id="promises" aria-labelledby="promises-title">
-      <div class="wrap">
-        <h2 id="promises-title">On every project</h2>
-        <ul class="promise-list">
-          <li><h3>NDA first</h3><p>We sign your NDA, or ours, before you share a single file.</p></li>
-          <li><h3>You own it</h3><p>The design files and the mold belong to you once paid for.</p></li>
-          <li><h3>Files any shop can use</h3><p>Native CAD plus STEP and PDF drawings, so you are never locked in to us.</p></li>
-          <li><h3>Progress you can see</h3><p>Photos and video at each milestone, so you know where the work stands.</p></li>
-          <li><h3>One engineer, start to finish</h3><p>You deal with the person doing the design, not a sales desk.</p></li>
-          <li><h3>Quote in 24 hours</h3><p>A fixed price for each stage and a free DFM check, agreed in writing before work starts.</p></li>
+        <ul class="check-grid">
+          <li><h3>Design for manufacturing</h3><p>Draft angles, wall thickness, undercuts and the parting line, checked so the part can be molded and released cleanly.</p></li>
+          <li><h3>Mold flow analysis</h3><p>How the plastic fills the mold, where weld lines form and how much pressure it needs. Run in Autodesk Moldflow.</p></li>
+          <li><h3>Gate location</h3><p>Where the plastic enters the part, placed for an even fill and to keep marks off the faces people see.</p></li>
+          <li><h3>Sink marks</h3><p>Thick areas shrink as they cool and leave dents on the surface. We find them and change the design.</p></li>
+          <li><h3>Air vents</h3><p>Where air gets trapped as the mold fills, causing burn marks or parts that do not fill, and where to vent it.</p></li>
+          <li><h3>Cooling and warpage</h3><p>Cooling channels placed so the part comes out flat, in size, and in the shortest cycle time.</p></li>
+          <li><h3>Shrinkage and tolerances</h3><p>Material shrinkage built into the mold, so the finished part matches your drawing.</p></li>
+          <li><h3>Strength</h3><p>Walls, ribs and bosses checked so the part can take the load it will see in use.</p></li>
+          <li><h3>Fit</h3><p>Each part checked against the parts it assembles with, first in CAD and then on a printed sample.</p></li>
         </ul>
       </div>
     </section>
 
-    <!-- REVIEWS -->
-    <section class="section section-tint" id="reviews" aria-labelledby="reviews-title">
+    <section class="section section-soft" id="services" aria-labelledby="services-title">
       <div class="wrap">
-        <h2 id="reviews-title">What clients say</h2>
-        <p class="section-intro">Five-star reviews from Upwork. Short excerpts, wording unchanged.</p>
+        <div class="section-head">
+          <h2 id="services-title">What we design</h2>
+          <p>Bring us a sketch, an old part or finished CAD. Not every design needs a mold, so you can stop at the design.</p>
+        </div>
+        <div class="svc-grid">
+          <article><h3>Product design and 3D CAD</h3><p>From an idea, a sketch or an existing part to a complete 3D model and drawings, ready for production. In SolidWorks, Siemens NX and AutoCAD.</p></article>
+          <article><h3>Injection mold design</h3><p>Core and cavity, gates and runners, cooling and ejection, with the full mold assembly, 2D drawings and a bill of materials.</p></article>
+          <article><h3>Blow and rubber mold design</h3><p>Molds for bottles and containers, and for seals, grips and other rubber parts.</p></article>
+          <article><h3>Reverse engineering</h3><p>Send a sample, or photos with the key dimensions. We build a clean, editable model you can manufacture or improve.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="prototypes" aria-labelledby="proto-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="proto-title">Hold the part before you pay for the mold</h2>
+          <p>A prototype costs a small part of what a mold costs. It shows you the size, fit and feel while changes are still cheap.</p>
+        </div>
+        <div class="proto-grid">
+          <article><span class="tag">Fast, low cost</span><h3>3D printed (FDM)</h3><p>Printed in plastic on our own printer. Good for checking size, shape and how parts fit together.</p></article>
+          <article><span class="tag">Fine detail</span><h3>Resin printed</h3><p>Smooth, detailed prints for small features and sample parts, made with our printing partner.</p></article>
+          <article><span class="tag">Real material</span><h3>Machined prototype</h3><p>Machined from the actual material when you need to test strength or function before the mold is made.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="deliverables" aria-labelledby="get-title">
+      <div class="wrap split">
+        <div>
+          <h2 id="get-title">What you receive</h2>
+          <ul class="tick-list">
+            <li><strong>Native CAD files plus STEP</strong>, so any toolmaker can work from them</li>
+            <li><strong>2D drawings</strong> with tolerances</li>
+            <li><strong>A DFM and mold flow report</strong> that explains each change and why</li>
+            <li><strong>An NDA</strong> signed before you send files, if you need one</li>
+            <li><strong>Full ownership</strong> of the design once it is paid for</li>
+          </ul>
+        </div>
+        <div>
+          <div class="viewer-box">
+            <div class="viewer-slot" id="viewer-slot">
+              <img src="media/gearbox-poster.webp" alt="Gearbox assembly designed by our team" class="viewer-poster" width="1200" height="900" loading="lazy">
+              <button class="btn" type="button" id="load-model">Open in 3D <span class="muted-on-btn">(1.2 MB)</span></button>
+            </div>
+          </div>
+          <p class="small muted" style="margin-top:10px">A gearbox assembly designed by our team. Open it in 3D and drag to turn it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="section-head"><h2 id="process-title">How a design project works</h2></div>
+        <ol class="steps" style="--cols:4">
+          <li><h3>Send us the part</h3><p>A CAD file, a drawing, photos or a sample. If you need an NDA, we sign it first.</p></li>
+          <li><h3>Free DFM check and quote</h3><p>Within 24 hours you get a fixed price and a short list of what we would change.</p></li>
+          <li><h3>Design and checks</h3><p>We design the part or the mold, run the checks and share it with you for review.</p></li>
+          <li><h3>Prototype and handover</h3><p>An optional printed or machined sample, then the final files.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="next" aria-labelledby="next-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="next-title">Need more than the design?</h2>
+          <p>When the design is approved, we can build the mold and make the parts too.</p>
+        </div>
+        <div class="paths">
+          <a class="path" href="mold-manufacturing.html"><h3>Mold manufacturing</h3><p>We build the mold from the approved design, try it on our own molding machine and send you the first samples.</p><span class="go">See mold manufacturing</span></a>
+          <a class="path" href="production.html"><h3>Part production</h3><p>We mold your parts, from a mold we built or one you send us. Quoted together with the mold.</p><span class="go">See part production</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="reviews-title">What clients say</h2>
+          <p>Five-star reviews from Upwork. Short excerpts, wording unchanged.</p>
+        </div>
         <div class="reviews">
           <blockquote>
             <p>One of the best engineers I've had the pleasure of working with. Always ready to help and very efficient with his time. Will be hiring him for more jobs.</p>
@@ -325,77 +217,45 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="section" id="about" aria-labelledby="about-title">
+    <section class="section section-soft" id="about" aria-labelledby="about-title">
       <div class="wrap about-grid">
         <figure class="portrait">
-          <div class="portrait-frame" role="img" aria-label="Photo of Yuvraj Sehgal, coming soon">
-            <span aria-hidden="true">YS</span>
-          </div>
+          <div class="portrait-frame" role="img" aria-label="Photo of Yuvraj Sehgal, coming soon"><span aria-hidden="true">YS</span></div>
           <figcaption>Yuvraj Sehgal, head of design</figcaption>
         </figure>
         <div>
           <h2 id="about-title">Who we are</h2>
-          <p>Brij Mold Makers is a design and toolmaking company in Focal Point, Jalandhar, the industrial district of Punjab. We are a GST-registered manufacturer and exporter.</p>
-          <p>The design work is led by Yuvraj Sehgal. He trained in mechanical engineering with a focus on tool and die, and has spent 6–7 years designing molds and working with the toolrooms that build them. That is why our designs are made to be machined, not only to look right on screen.</p>
-          <p>Around him is a team of designers, our own injection molding machine and 3D printer, and the toolrooms of Focal Point we work with every day for CNC, EDM and wire-cut machining. You deal with one company from the first sketch to a tested mold.</p>
-          <p class="tools">Software: SolidWorks, Siemens NX and AutoCAD for design. Autodesk Moldflow for flow analysis.</p>
+          <p>Brij Mold Makers is a design and mold company in Focal Point, Jalandhar, the industrial area of Punjab, India. We are GST registered and work with clients in India and abroad.</p>
+          <p>Design is led by Yuvraj Sehgal, a mechanical engineer trained in tool and die, with 6–7 years in mold design. He works closely with the toolrooms that build molds, so his designs take into account how the steel will actually be cut.</p>
+          <p>He works with a small team of designers, our own injection molding machine and 3D printer, and partner toolrooms in Focal Point for CNC, VMC, EDM and wire-cut machining. You deal with one company from the first sketch to finished parts.</p>
+          <p class="small muted">Design work has covered automotive parts, household appliances, FMCG products and electronic controllers.</p>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="section section-tint" id="faq" aria-labelledby="faq-title">
+    <section class="section" id="faq" aria-labelledby="faq-title">
       <div class="wrap narrow">
         <h2 id="faq-title">Questions</h2>
-        <details>
-          <summary>Which file formats do you accept?</summary>
-          <p>STEP, IGES, Parasolid, SolidWorks, STL, DWG, DXF and PDF drawings. If you only have a sample or a few photos, we can reverse engineer the part.</p>
-        </details>
-        <details>
-          <summary>How much does a mold design cost?</summary>
-          <p>Mold designs start from $200. The price depends on the part size, the number of cavities and features such as slides or lifters. Send us the part and you get a fixed quote within 24 hours.</p>
-        </details>
-        <details>
-          <summary>Which steel do you use?</summary>
-          <p>For export molds we usually use P20 tool steel. It machines well and holds up in production. If your part or volume needs a different steel, we will recommend one in the quote.</p>
-        </details>
-        <details>
-          <summary>Can I order only the design?</summary>
-          <p>Yes. Many clients start with the design and the flow analysis, then have the mold built by us or by a toolmaker near them. You get native files and STEP either way.</p>
-        </details>
-        <details>
-          <summary>Who owns the mold?</summary>
-          <p>You do, once it is paid for. We can keep it at our facility and run production for you on our molding machine, or pack it and ship it to you or your molder.</p>
-        </details>
-        <details>
-          <summary>Why a 3D printed sample first?</summary>
-          <p>A mold is the most expensive step. A printed sample lets you check size, fit and feel for a small cost, and changes made at this point cost almost nothing.</p>
-        </details>
-        <details>
-          <summary>How do we talk during the project?</summary>
-          <p>By WhatsApp, email or video call, whichever suits you. You talk directly to the engineer working on your job.</p>
-        </details>
-        <details>
-          <summary>How do you keep my design confidential?</summary>
-          <p>We sign an NDA before receiving files, we never show client work on our website or social media, and your files are only shared with the people working on your job.</p>
-        </details>
+        <details><summary>How much does a mold design cost?</summary><p>Mold designs start from $200. The price depends on the size of the part, the number of cavities and features such as slides or lifters. Send us the part and you get a fixed quote within 24 hours.</p></details>
+        <details><summary>Can I order only the design?</summary><p>Yes. Many clients only need the design and the checks. You get native files and STEP, and you can have the mold built by us or by any toolmaker.</p></details>
+        <details><summary>Which file formats do you accept?</summary><p>STEP, IGES, Parasolid, SolidWorks, STL, DWG, DXF and PDF drawings. If you only have a sample or photos, we can reverse engineer the part.</p></details>
+        <details><summary>Why make a prototype first?</summary><p>The mold is the most expensive step. A prototype lets you check size, fit and feel for a small cost, while changes still cost almost nothing.</p></details>
+        <details><summary>How do you keep my design confidential?</summary><p>We sign an NDA before receiving files, never show client work on our website or social media, and share your files only with the people working on your job.</p></details>
+        <details><summary>How do we stay in touch during the project?</summary><p>By WhatsApp, email or video call, whichever suits you. You speak directly with the engineer working on your part.</p></details>
       </div>
     </section>
 
-    <!-- QUOTE -->
-    <section class="section" id="quote" aria-labelledby="quote-title">
+    <section class="section section-soft" id="quote" aria-labelledby="quote-title">
       <div class="wrap quote-grid">
         <div>
           <h2 id="quote-title">Get a quote</h2>
-          <p class="section-intro">Tell us about the part. You get a quote within 24 hours, with a free DFM check. Mold designs start from $200.</p>
+          <p class="lede">Tell us about the part. You get a quote within 24 hours, with a free DFM check.</p>
           <p>When you press send, your message opens in WhatsApp or your email app, ready to go. Attach your files there.</p>
           <div class="direct">
             <p><span class="muted">WhatsApp</span><br><a href="https://wa.me/919530577218" target="_blank" rel="noopener">+91 95305 77218</a></p>
             <p><span class="muted">Email</span><br><a href="mailto:brijmoldmakers@gmail.com">brijmoldmakers@gmail.com</a></p>
           </div>
         </div>
-
         <form class="quote-form" id="quote-form" novalidate>
           <div class="field-row">
             <label>Your name
@@ -447,26 +307,32 @@
     </section>
   </main>
 
-  <!-- Title block footer -->
   <footer class="site-footer">
     <div class="wrap">
-      <table class="title-block">
-        <caption class="visually-hidden">Company details</caption>
-        <tbody>
-          <tr>
-            <th scope="row">Company</th><td>Brij Mold Makers</td>
-            <th scope="row">Address</th><td>F-27 Focal Point, Jalandhar 144004, Punjab, India</td>
-          </tr>
-          <tr>
-            <th scope="row">WhatsApp</th><td><a href="https://wa.me/919530577218" target="_blank" rel="noopener">+91 95305 77218</a></td>
-            <th scope="row">Email</th><td><a href="mailto:brijmoldmakers@gmail.com">brijmoldmakers@gmail.com</a></td>
-          </tr>
-          <tr>
-            <th scope="row">Registration</th><td>GST-registered manufacturer and exporter</td>
-            <th scope="row">Sheet</th><td>1 of 1, &copy; <span id="year">2026</span></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="footer-grid">
+        <div>
+          <h2>Brij Mold Makers</h2>
+          <p>F-27 Focal Point, Jalandhar 144004<br>Punjab, India</p>
+          <p class="muted">GST-registered manufacturer and exporter</p>
+        </div>
+        <div>
+          <h2>Services</h2>
+          <ul>
+            <li><a href="index.html">Part and mold design</a></li>
+            <li><a href="index.html#prototypes">Prototypes</a></li>
+            <li><a href="mold-manufacturing.html">Mold manufacturing</a></li>
+            <li><a href="production.html">Part production</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li>WhatsApp <a href="https://wa.me/919530577218" target="_blank" rel="noopener">+91 95305 77218</a></li>
+            <li><a href="mailto:brijmoldmakers@gmail.com">brijmoldmakers@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">&copy; <span id="year">2026</span> Brij Mold Makers. Client designs are never shown on this site.</p>
     </div>
   </footer>
 

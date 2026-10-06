@@ -3,7 +3,18 @@ const EMAIL = 'brijmoldmakers@gmail.com';
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Hero video: a pause control, and no autoplay for people who asked for less motion.
+// Phone menu.
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.getElementById('main-nav');
+navToggle?.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', String(open));
+});
+nav?.addEventListener('click', (e) => {
+  if (e.target.closest('a')) { nav.classList.remove('open'); navToggle?.setAttribute('aria-expanded', 'false'); }
+});
+
+// Hero video (home page only): a pause control, and no autoplay for people who asked for less motion.
 const video = document.querySelector('.flow-video');
 const toggle = document.querySelector('.video-toggle');
 function setPlaying(playing) {
@@ -12,14 +23,16 @@ function setPlaying(playing) {
   toggle.textContent = playing ? 'Pause' : 'Play';
   toggle.setAttribute('aria-pressed', String(!playing));
 }
-if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) setPlaying(false);
-toggle.addEventListener('click', () => setPlaying(video.paused));
+if (video && toggle) {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) setPlaying(false);
+  toggle.addEventListener('click', () => setPlaying(video.paused));
+}
 
 // 3D model: only downloaded when someone asks for it.
 const loadBtn = document.getElementById('load-model');
-loadBtn.addEventListener('click', async () => {
+loadBtn?.addEventListener('click', async () => {
   loadBtn.disabled = true;
-  loadBtn.textContent = 'Loading the model…';
+  loadBtn.textContent = 'Opening the model…';
   try {
     const { ModelViewerElement } = await import('@google/model-viewer');
     // The model is meshopt-compressed (5 MB down to 1.2 MB); the decoder is self-hosted.
@@ -53,7 +66,7 @@ loadBtn.addEventListener('click', async () => {
 const form = document.getElementById('quote-form');
 const errorBox = document.getElementById('form-error');
 
-form.addEventListener('submit', (event) => {
+form?.addEventListener('submit', (event) => {
   event.preventDefault();
   const channel = event.submitter?.value || 'whatsapp';
 
