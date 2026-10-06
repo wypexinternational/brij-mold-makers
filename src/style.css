@@ -24,7 +24,7 @@
   --step-4: clamp(2.2rem, 1.5rem + 3vw, 3.5rem);
 
   --gutter: 16px;
-  --radius: 6px;
+  --radius: 3px;
 }
 @media (min-width: 720px) { :root { --gutter: 32px; } }
 
@@ -269,3 +269,30 @@ legend { font-size: var(--step--1); font-weight: 600; margin-bottom: 8px; paddin
 .steps-compact li { display: grid; grid-template-columns: 36px 1fr; column-gap: 16px; }
 .steps-compact li::before { margin: 0; grid-row: span 2; }
 .steps-compact h3 { margin: 6px 0 2px; }
+
+/* v5 (6 Oct 2026): plastic parts and molds home page, darker industrial hero */
+.eyebrow { font-size: .8rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; color: var(--teal); margin-bottom: 14px; }
+.hero-industrial { background: #1b252d; color: #fff; border-bottom: 0; }
+.hero-industrial h1 { max-width: 20ch; color: #fff; }
+.hero-industrial .eyebrow { color: #6fc7ab; }
+.hero-industrial .lede { color: #c9d3d9; }
+.hero-industrial .btn-ghost { color: #fff; border-color: #5b6a75; }
+.hero-industrial .btn-ghost:hover { background: #24323d; color: #fff; }
+.hero-industrial .media-frame { border-color: #33424d; box-shadow: none; }
+.hero-industrial .hero-figure figcaption { color: #9aa8b2; }
+.hero-industrial .proof { margin-top: 56px; padding-top: 28px; border-top: 1px solid #33424d; }
+.hero-industrial .proof div { border-left-color: #6fc7ab; }
+.hero-industrial .proof dt { color: #9aa8b2; }
+.hero-industrial .proof dd { font-size: var(--step-1); }
+
+.cred-strip { background: var(--bg-soft); border-bottom: 1px solid var(--line); }
+.cred-strip p { margin: 0 auto; padding-top: 16px; padding-bottom: 16px; font-size: var(--step--1); color: var(--muted); }
+
+.stage-grid { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+@media (min-width: 900px) { .stage-grid { grid-template-columns: repeat(3, 1fr); } }
+.stage { background: #fff; padding: 28px 26px 30px; display: flex; flex-direction: column; }
+.stage-no { font-size: .85rem; font-weight: 700; color: var(--teal); border-top: 3px solid var(--teal); padding-top: 10px; margin-bottom: 18px; width: 40px; }
+.stage > p { color: var(--ink-2); }
+.spec-list { list-style: none; margin: 0 0 20px; padding: 0; border-top: 1px solid var(--line); }
+.spec-list li { padding: 8px 0; border-bottom: 1px solid var(--line); font-size: var(--step--1); color: var(--ink-2); }
+.stage .go { margin-top: auto; font-weight: 650; font-size: var(--step--1); }
